@@ -38,4 +38,5 @@ void main()
     end = clock();
     totaltime = (double)(end - start) / CLOCKS_PER_SEC;
     printf("total time taken to sort:%f", totaltime);
+    printf("the array has been sorted now");
 }
