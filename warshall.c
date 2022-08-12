@@ -10,11 +10,11 @@ int maxi(int x, int y)
 }
 void warshall(int graph[10][10], int v)
 {
-    for (int k = 0; k < v; k++)
+    for (int k = 1; k <= v; k++)
     {
-        for (int i = 0; i < v; i++)
+        for (int i = 1; i <= v; i++)
         {
-            for (int j = 0; j < v; j++)
+            for (int j = 1; j <= v; j++)
             {
                 graph[i][j] = maxi(graph[i][j], graph[i][k] && graph[k][j]);
             }
